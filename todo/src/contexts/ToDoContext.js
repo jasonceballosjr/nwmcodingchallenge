@@ -26,6 +26,11 @@ const ToDoContextProvider = props => {
         setTasks([]);
     }
 
+    const funItem = title => {
+        title = "Hire Jason Ceballos";
+        setTasks([...tasks, { title, id: uuidv4() }]);
+    }
+
     const findItem = id => {
         const item = tasks.find(task => task.id === id);
 
@@ -50,7 +55,8 @@ const ToDoContextProvider = props => {
                 clearList,
                 findItem,
                 editTask,
-                editItem
+                editItem,
+                funItem
             }}
         >
             {props.children}

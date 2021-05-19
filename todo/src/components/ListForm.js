@@ -2,7 +2,7 @@ import React, { useState, useContext, useEffect } from 'react';
 import { ToDoContext } from '../contexts/ToDoContext';
 
 const ListForm = () => {
-    const { addItem, clearList, editTask, editItem } = useContext(ToDoContext);
+    const { addItem, clearList, editTask, editItem, funItem } = useContext(ToDoContext);
     const [title, setTitle] = useState('');
 
     const handleSubmit = e => {
@@ -44,7 +44,10 @@ const ListForm = () => {
                 </button>
                 <button className="button clearButton" onClick={clearList}>
                     Remove
-        </button>
+                </button>
+                <button className="button funButton" onClick={funItem}>
+                    Click Me
+                </button>
             </div>
         </form>
     )
