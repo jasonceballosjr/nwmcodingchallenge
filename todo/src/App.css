@@ -15,7 +15,7 @@
   align-items: center;
 }
 
-.app-wrapper {
+.wrapper {
   background-color: #0e497b;
   width: 25%;
   min-width: 450px;
@@ -158,4 +158,5 @@
   text-align: center;
   font-size: 18px;
   margin-top: 20px;
+  font-family: 'Josefin Slab', serif;
 }
